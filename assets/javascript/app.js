@@ -117,7 +117,8 @@ function resetGame() {
 	showTimer();
 }
 
-//Declare variables
+// Generally, you want to declare your variables near the top of your scripts so people who are reading it for the first time know which are global/important
+//Declare variables 
 var trivia;
 var clock;
 var counter = 10;
@@ -126,6 +127,7 @@ var win = 0;
 var loss = 0;
 var unanswered = 0;
 
+// Good choice here on using objects to store questions/questions-related data
 var questions = [{
     question: "What fast food originated from Los Angeles?",
     choices: ["A. In and Out","B. Pizza Hut","C. Chipotle","D. McDonalds"],
